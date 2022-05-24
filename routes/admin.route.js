@@ -10,8 +10,6 @@ router.post('/signup', body("email").isEmail(),
     body("password", "password minimum length must be 6").isLength(6),
     adminController.adminSignup);
 
-
-
 router.post('/signIn', body("email").isEmail(),
     body("password", "password minimum length must be 6").isLength(6),
     adminController.adminSignIn);
